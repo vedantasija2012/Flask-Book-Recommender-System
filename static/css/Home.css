@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home{
+    height: 40vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home p{
+    color: white;
+    font-family: 'Rowdies';
+    font-size: 2rem;
+}
+.more li{
+    font-size: 1.2rem;
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    float: left;
+}

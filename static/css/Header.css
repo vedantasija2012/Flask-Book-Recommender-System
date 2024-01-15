@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar ul li{
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+.link{
+    padding: 0 1rem;
+    font-family: 'Permanent Marker';
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    width: 20vw;
+    margin: 0 15rem;
+}
+.loginLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.loginLink:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.profileBtn{
+    padding: 0.4rem;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    margin-right: 1.2rem;
+}

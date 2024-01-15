@@ -1,0 +1,33 @@
+.profileContainer{
+    height: 50vh;
+    width: 100vw;
+    opacity: 0.8;
+}
+.userDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.userDetails div{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    width: 30vw;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.profileBtn{
+    font-weight: bold;
+    width: 10vw;
+}
+@media screen and (max-width:600px) {
+    .profileContainer{
+        width: 100vw;
+    }
+    .userDetails{
+        width: 90vw;
+    }.userDetails input{
+        width: 80vw;
+    }
+}

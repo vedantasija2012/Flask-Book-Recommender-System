@@ -1,0 +1,53 @@
+.searchHeading{
+    margin-top: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+.searchContainer{
+    display: block;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    background-color: red;
+}
+.searchForm{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchBar{
+    border: none;
+    border-radius: 25px;
+    width: 40vw;
+    margin: 1rem auto;
+    font-weight: bold;
+}
+.heading-h3{
+    color: white;
+    font-family: 'Permanent Marker';
+}
+.heading{
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'Signika';
+}
+.inner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:600px) {
+    .searchBar{
+        width: 70vw;
+    }
+    .btn{
+        width: 25vw;
+    }
+    .searchContainer{
+        width: 70vw;
+    }
+}

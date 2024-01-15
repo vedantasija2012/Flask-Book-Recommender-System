@@ -1,0 +1,26 @@
+h3{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 80vh;
+}
+.heading{
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'Signika';
+}
+.heading-h3{
+    color: white;
+    font-family: 'Permanent Marker';
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Search Books{% endblock title %}
+{% block mycss %}
+<link rel="stylesheet" href="../static/css/Search.css">
+{% endblock mycss %}
+{% block body %}
+<div class='container my-3'>
+  <h3 class="text-center heading-h3">Search Books</h3>
+  <form class="d-flex flex-column my-3" role="search" action="/search" method="post">
+    <div class="mb-3">
+      <label for="title" class="form-label heading">Search By Title:</label>
+      <input type="text" class="form-control" name="title" id="title" placeholder="Title:">
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label heading">Search By Author:</label>
+      <input type="text" class="form-control" name="author" id="author" placeholder="Author:">
+    </div>
+    <div class="d-grid gap-2 col-3 mx-auto">
+      <button class="btn btn-outline-light my-2" style="font-weight: bold;" type="submit">Search Book</button>
+    </div>
+  </form>
+  <div class="container my-4">
+    <div class="inner-container my-2">
+      <h3 class="text-center" style="color: white; font-weight: bold;">Recommendations...</h3>
+      {% if data %}
+      <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
+        <img src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg" style="height: 15rem; width: 100%;"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Book</h5>
+          <p class="card-text">Content</p>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock body %}
