@@ -9,7 +9,7 @@
   <form class="d-flex flex-column my-3" role="search" action="/search" method="post">
     <div class="mb-3">
       <label for="title" class="form-label heading">Search By Title:</label>
-      <input type="text" class="form-control" name="title" id="title" placeholder="Title:">
+      <input type="text" class="form-control" name="book_title" id="title" placeholder="Title:">
     </div>
     <div class="mb-3">
       <label for="author" class="form-label heading">Search By Author:</label>
@@ -22,7 +22,6 @@
   <div class="container my-4">
     <div class="inner-container my-2">
       <h3 class="text-center" style="color: white; font-weight: bold;">Recommendations...</h3>
-      {% if data %}
       <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
         <img src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg" style="height: 15rem; width: 100%;"
           class="card-img-top" alt="...">
@@ -31,8 +30,29 @@
           <p class="card-text">Content</p>
         </div>
       </div>
-      {% endif %}
+      
     </div>
+
+    <!-- His code: -->
+    <!-- <div class="row">
+      {% if data %}
+       {% for i in data %}
+          <div class="col-md-3" style="margin-top:50px">
+              <div class="card">
+                  <div class="card-body">
+                      <img class="card-img-top" src="{{i[2]}}">
+                      <p class="text-white">{{i[0]}}</p>
+                      <h4 class="text-white">{{i[1]}}</h4>
+                  </div>
+              </div>
+          </div>
+       {% endfor %}
+      {% endif %}
+  </div> -->
   </div>
+</div>
+
+<div class="container">
+  
 </div>
 {% endblock body %}

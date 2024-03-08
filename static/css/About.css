@@ -28,6 +28,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 200vh;
+    overflow-y: scroll;
+}
+.top50::-webkit-scrollbar {
+    display: none;
 }
 .card-body h5{
     font-size: 1rem;

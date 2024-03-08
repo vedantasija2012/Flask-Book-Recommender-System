@@ -1,16 +1,20 @@
 {% extends 'base.html' %}
 {% block title %}About Us{% endblock title %}
 {% block mycss %}
-    <link rel="stylesheet" href="../static/css/About.css">
+<link rel="stylesheet" href="../static/css/About.css">
 {% endblock mycss %}
 {% block body %}
 <div class='container p-2 about-us'>
-    <h2 class="heading">About Us</h2>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestias? Nesciunt odio iste exercitationem animi cupiditate. Fuga, libero iusto recusandae tenetur maxime accusantium ut laboriosam. Laborum modi eius nostrum soluta, esse, dolorum rerum fugiat ea natus consequatur ad accusamus officiis aliquid sunt provident, hic repudiandae tempore beatae aut obcaecati iste nisi. Optio accusamus id voluptatem possimus sapiente odit quidem alias</p>
-    </div>
-    <h3 class="text-center my-2" style="color: white; font-weight: bold;">Top Recommendations...</h3>
-    <div class="top50">
+  <h2 class="heading">About Us</h2>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, molestias? Nesciunt odio iste exercitationem
+      animi cupiditate. Fuga, libero iusto recusandae tenetur maxime accusantium ut laboriosam. Laborum modi eius
+      nostrum soluta, esse, dolorum rerum fugiat ea natus consequatur ad accusamus officiis aliquid sunt provident, hic
+      repudiandae tempore beatae aut obcaecati iste nisi. Optio accusamus id voluptatem possimus sapiente odit quidem
+      alias</p>
+  </div>
+  <h3 class="text-center my-2" style="color: white; font-weight: bold;">Top Recommendations...</h3>
+  <div class="top50">
       {% for item in range(book_name|length) %}
       <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
         <img src="{{image[item]}}" style="height: 15rem; width: 100%;"
@@ -24,5 +28,20 @@
       </div>
       {% endfor %}
     </div>
-</div>
+
+  <!-- second block -->
+  <!-- <div class="top50">
+    {% for item in range(book_name|length) %}
+    <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
+      <img src="" style="height: 15rem; width: 100%;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <p class="card-text"></p>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->
 {% endblock body %}
