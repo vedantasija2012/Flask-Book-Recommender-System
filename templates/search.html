@@ -20,39 +20,27 @@
     </div>
   </form>
   <div class="container my-4">
-    <div class="inner-container my-2">
+    <!-- Display Resultant books -->
+    <div class="row">
+      {% if data %}
       <h3 class="text-center" style="color: white; font-weight: bold;">Recommendations...</h3>
-      <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
-        <img src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg" style="height: 15rem; width: 100%;"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Book</h5>
-          <p class="card-text">Content</p>
+      {% for i in data %}
+      <div class="col-md-3" style="margin-top:1rem;">
+        <div class="card mx-2 my-4" style="width: 15rem; background-color: black; color: white; border: 2px solid white;">
+          <div class="card-body">
+            <img class="card-img-top" style="height: 15rem; width: 100%;" src="{{i[2]}}">
+            <h5>{{i[1]}}</h5>
+            <p>{{i[0]}}</p>
+          </div>
         </div>
       </div>
-      
-    </div>
-
-    <!-- His code: -->
-    <!-- <div class="row">
-      {% if data %}
-       {% for i in data %}
-          <div class="col-md-3" style="margin-top:50px">
-              <div class="card">
-                  <div class="card-body">
-                      <img class="card-img-top" src="{{i[2]}}">
-                      <p class="text-white">{{i[0]}}</p>
-                      <h4 class="text-white">{{i[1]}}</h4>
-                  </div>
-              </div>
-          </div>
-       {% endfor %}
+      {% endfor %}
       {% endif %}
-  </div> -->
+    </div>
   </div>
 </div>
 
 <div class="container">
-  
+
 </div>
 {% endblock body %}

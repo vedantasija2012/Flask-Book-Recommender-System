@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock title %}
 {% block mycss %}
-  <link rel="stylesheet" href="../static/css/Home.css">
+<link rel="stylesheet" href="../static/css/Home.css">
 {% endblock mycss %}
 {% block body %}
 <div class="container">
+  {% if success_message %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>{{ success_message}}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endif %}
   <div class='home'>
     <p>There is no friend</p>
     <p>As loyal as books</p>

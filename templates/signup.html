@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %} Give Feedback {% endblock title %}
+{% block mycss %}
+<link rel="stylesheet" href="../static/css/Signup.css">
+{% endblock mycss %}
+{% block body %}
+<div class="container loginPage">
+    <form action="/signup" method="post">
+        <h2>Create your Account!</h2>
+        <div class="my-1">
+            <label class="form-label heading">Enter your Username:</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username:" />
+        </div>
+        <div class="my-1">
+            <label class="form-label heading">Enter your Password:</label>
+            <input type="password" class="form-control" id="email" name="password" placeholder="Enter your Password:" />
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button class="btn btn-dark border-2">Sign Up</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <span class="d-block text-center">OR</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button class="btn btn-outline-light border-2"><a href="/login">Login</a></button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock body %}

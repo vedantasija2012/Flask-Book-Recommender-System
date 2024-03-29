@@ -24,15 +24,15 @@ body{
     font-size: 1.2rem;
 }
 .link{
-    padding: 0 1rem;
-    font-family: 'Permanent Marker';
-    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    font-family: 'Gill Sans MT';
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
 .logo{
-    width: 20vw;
+    width: 15vw;
     margin: 0 15rem;
 }
 .loginLink{
