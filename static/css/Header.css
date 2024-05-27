@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +15,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: none;
 }
 .navbar ul{
     display: flex;
@@ -33,7 +38,7 @@ body{
 }
 .logo{
     width: 15vw;
-    margin: 0 15rem;
+    margin-right: 15rem;
 }
 .loginLink{
     font-weight: bold;
@@ -52,4 +57,10 @@ body{
     border-radius: 50%;
     color: white;
     margin-right: 1.2rem;
+}
+@media screen and (max-width: 990px) {
+    .logo{
+        margin: 0;
+        width: 10vw;
+    }
 }

@@ -46,8 +46,20 @@ def about():
     rating = list(popular_df['avg_rating'].values),
     )
 
-@app.route('/feedback')
+@app.route('/feedback', methods=["POST", "GET"])
 def feedback():
+    if request.method=="POST":
+        username = request.form.get('name')
+        email = request.form.get('email')
+        feedback = request.form.get('feedback')
+        if username=="" or email=="":
+            flash("Enter Valid Credentials!", "warning")
+            return redirect("/feedback")
+        if feedback=="":
+            flash("Enter Valid Query!", "warning")
+            return redirect("/feedback")
+        flash("Feedback Submitted Successfully!", "success")
+
     return render_template('feedback.html')
 
 # username: user1
